@@ -1,0 +1,238 @@
+body{
+    font-family: 'Roboto', Helvetica, sans-serif !important;
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/white_wall.png");
+    min-height: 100%;
+    position: relative;
+  }
+  html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+/* header */
+.nav{
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    border-bottom: 2px solid #cccccc;
+}
+.one{
+    width: 100%;
+    height: 50px;
+    background: #2EAF95;
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.two{
+    width: 100%;
+    height: 50px;
+    margin-right: 100px;
+    background:  #ffffff;
+}
+
+.two ul{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.two li{
+    display: inline;
+    border-right: 1px solid #cccccc;
+    padding-right: 10px;
+    padding-left: 10px;
+ }
+
+ .nav a{
+    text-decoration: none;
+    color: #cccccc;
+}
+.nav a:hover { color: #4aaaa5 ; }
+/* End */
+
+/* Portfolio */
+    .container{
+        padding: 30px;
+    }
+    .block{
+        max-width: 980px;
+        display: block;
+        margin: 80px auto 80px auto;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+    }
+    .block h1{
+        color: #4aaaa5; 
+        font-size: 30px;
+    }
+    .portfolio-img{
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .portfolio-img img{
+        max-width: 100%;
+        border-radius: 8px;
+        display: inline-block;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .block-text {
+        position: absolute;
+        background: #4aaaa5;
+        width: 100%;
+        margin-top: 60px;
+        text-align: center;
+        color: #ffffff;
+        height: 25px;
+        padding-top: 11px;
+    }
+/* End */
+
+/* About */
+.about img{
+    display: block;
+    margin: 10px auto;
+}
+
+.about p{
+    font-size: 20px;
+    color: #666666;
+    padding: 10px;
+}
+/* End */
+
+/* Contact */
+form input{
+    width: 100%;
+    height: 30px;
+    border:1px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+form h3{
+    margin-bottom: 10px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    border:1px solid #cccccc;
+}
+button{
+    background: #4aaaa5 !important;
+    color: #ffffff;
+    border: none;
+    border-color: #4aaaa5 !important;
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+/* Footer */
+footer{
+    position: absolute;
+    left: 0 ; right: 0; bottom: 0;
+    border-top: 8px solid #4aaaa5 !important;
+    display: block;
+    background: #666666;
+    height: 50px;
+    width: 100%;
+}
+footer p{
+    padding-top: 2px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    /* Navbar */
+    .nav{
+        width: 100%;
+        height: 60px;
+    }
+    .one{
+        width: 100px;
+        height: 50px;
+        margin-left: 70px;
+        float: left;
+    }
+
+    .two{
+        width: 250px;
+        height: 50px;
+        margin-right: 100px;
+        float: right;
+    }
+    .two ul{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    /* Index */
+    .about img {
+        display: block;
+        margin: 10px;
+        float: left;
+    }
+    
+
+    /* portofolio */
+    .row{
+        display: flex;
+    }
+
+    .portfolio-img{
+        justify-content: flex-start;
+        position: relative;
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 48%;
+    }
+
+    .block-text{
+        margin-top: 110px;
+    }
+    /* End */
+    /* Contact */
+    .block h3{
+        font-size: 20px;
+        color: #cccccc;
+    }
+    .block h2{
+        color: #4aaaa5;
+    }
+    /* End */
+    /* Footer */
+    footer p{
+        padding-top: 2px;
+        text-align: center;
+        color: #ffffff;
+    }
+    /* End */
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .block{
+        margin: 80px auto 80px auto
+    }
+    .block-text{
+        margin-top: 165px;
+    }    
+ }
